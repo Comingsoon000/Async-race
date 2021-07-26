@@ -1,0 +1,350 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: Roboto;
+  background-color: #000000;
+}
+
+.header {
+  margin-top: 25px;
+}
+
+.header__winners-btn,
+.header__garage-btn,
+.winners__prev-btn,
+.winners__next-btn {
+  width: 90px;
+  height: 20px;
+  margin-left: 20px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #db9806;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 5px;
+  border-color: #02be1b;
+}
+
+.controls {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.create-car,
+.update-car,
+.buttons__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.create-car__name-input,
+.update-car__name-input {
+  width: 200px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.create-car__color-input,
+.update-car__color-input {
+  width: 60px;
+  height: 18px;
+  margin-left: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.create-car__submit-btn,
+.update-car__submit-btn {
+  width: 60px;
+  height: 20px;
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 5px;
+  border-color: #6e7ae9;
+}
+
+.buttons__race-btn,
+.buttons__reset-btn,
+.garage__prev-btn,
+.garage__next-btn,
+.buttons__generate-cars-btn {
+  height: 20px;
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #db9806;
+}
+
+.garage__prev-btn,
+.buttons__race-btn {
+  margin-left: 0;
+}
+
+.garage__prev-btn,
+.garage__next-btn,
+.buttons__race-btn,
+.buttons__reset-btn {
+  width: 95px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 5px;
+  border-color: #02be1b;
+}
+
+.buttons__generate-cars-btn {
+  width: 130px;
+  background-color: #ffffff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 5px;
+  border-color: #6e7ae9;
+}
+
+.garage,
+.winners {
+  margin-top: 40px;
+}
+
+.garage__title,
+.winners__title {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.garage__page,
+.winners__page {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.car {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.car__top,
+.car__bot {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.car__bot {
+  margin-top: 10px;
+}
+
+.car__top-select-btn,
+.car__top-remove-btn,
+.car__bot-start-btn,
+.car__bot-stop-btn {
+  width: 80px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 5px;
+  border-color: #6e7ae9;
+}
+
+.car__top-remove-btn,
+.car__bot-stop-btn {
+  margin-left: 10px;
+}
+
+.car__bot-start-btn {
+  width: 50px;
+  background-color: #047513;
+  border-color: #ffffff;
+}
+
+.car__bot-stop-btn {
+  width: 50px;
+  margin-right: 10px;
+  background-color: #e43003;
+  border-color: #ffffff;
+}
+
+.car__top-car-name {
+  margin-left: 10px;
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #db9806;
+}
+
+.car__bot-road {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.car__bot-car-image {
+  position: relative;
+  transform: scale(-1, 1);
+}
+
+.car__car-roadbed {
+  border-top: 3px dashed #ffffff;
+}
+
+.winner {
+  position: fixed;
+  top: calc(50% - 150px);
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.7);
+}
+
+.winners__sheet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #036897;
+}
+
+.sheet__string {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.winners__sheet-number,
+.winners__sheet-car,
+.winners__sheet-name,
+.winners__sheet-wins,
+.winners__sheet-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.winners__sheet-number,
+.winners__sheet-wins,
+.winners__sheet-time {
+  cursor: pointer;
+}
+
+.sheet__string-number,
+.sheet__string-car,
+.sheet__string-name,
+.sheet__string-wins,
+.sheet__string-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  overflow-x:hidden;
+}
+
+.winners__sheet-number,
+.sheet__string-number {
+  width: 65px;
+}
+
+.winners__sheet-car,
+.sheet__string-car {
+  width: 32px;
+}
+
+.winners__sheet-name,
+.sheet__string-name {
+  justify-content: flex-start;
+  width: 150px;
+}
+
+.winners__sheet-wins,
+.sheet__string-wins {
+  width: 40px;
+}
+
+.winners__sheet-time,
+.sheet__string-time {
+  width: 101px;
+}
+
+
+.winners__page-buttons {
+  margin-top: 10px;
+}
+
+.garage__page-buttons {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.winners__prev-btn,
+.winners__next-btn {
+  width: 60px;
+}
+
+.winners__prev-btn {
+  background-color: #e43003;
+  border-color: #ffffff;
+}
+
+.winners__next-btn {
+  background-color: #047513;
+  border-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
